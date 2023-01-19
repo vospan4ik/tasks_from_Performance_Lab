@@ -10,8 +10,8 @@ with open(sys.argv[2], 'r') as file:
         point = [float(num) for num in line.split()]
         distance = (center[0] - point[0])**2 + (center[1] - point[1])**2
         if distance == r:
-            print(0)
+            print(0, end=' ')
         elif distance < r:
-            print(1)
+            print(1, end=' ')
         elif distance > r:
-            print(2)
+            print(2, end=' ')
